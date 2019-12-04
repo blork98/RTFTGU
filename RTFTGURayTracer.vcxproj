@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D0432988-8C03-4589-8CD1-21883FAEA3F1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RTFTGURayTracer</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Angel\VC 2012 Projects\RayTracer\RTFTGURayTracer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AmbientLight.h" />
+    <ClInclude Include="AmbientOccluder.h" />
+    <ClInclude Include="AreaLight.h" />
+    <ClInclude Include="AreaLightingTracer.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="BRDF.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="Emissive.h" />
+    <ClInclude Include="EnvironmentLight.h" />
+    <ClInclude Include="FisheyeCamera.h" />
+    <ClInclude Include="GeometricObject.h" />
+    <ClInclude Include="GlossySpecularBRDF.h" />
+    <ClInclude Include="HammerslySampler.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="JitteredSampler.h" />
+    <ClInclude Include="LambertianBRDF.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="MathUtils.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Matte.h" />
+    <ClInclude Include="MultiJitteredSampler.h" />
+    <ClInclude Include="Normal.h" />
+    <ClInclude Include="NRooksSampler.h" />
+    <ClInclude Include="OpenCylinder.h" />
+    <ClInclude Include="Phong.h" />
+    <ClInclude Include="PinholeCamera.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Plastic.h" />
+    <ClInclude Include="Point2D.h" />
+    <ClInclude Include="Point3D.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="RandomSampler.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="RayCast.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RegularSampler.h" />
+    <ClInclude Include="RGB.h" />
+    <ClInclude Include="Sampler.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="ShadeRec.h" />
+    <ClInclude Include="SimpleTracers.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="SphericalCamera.h" />
+    <ClInclude Include="StereoCamera.h" />
+    <ClInclude Include="ThinLensCamera.h" />
+    <ClInclude Include="Torus.h" />
+    <ClInclude Include="Tracer.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Vector3D.h" />
+    <ClInclude Include="ViewPlane.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AmbientLight.cpp" />
+    <ClCompile Include="AmbientOccluder.cpp" />
+    <ClCompile Include="AreaLight.cpp" />
+    <ClCompile Include="AreaLightingTracercpp.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="BRDF.cpp" />
+    <ClCompile Include="Cameras.cpp" />
+    <ClCompile Include="DirectionalLight.cpp" />
+    <ClCompile Include="Emissivecpp.cpp" />
+    <ClCompile Include="EnvironmentLight.cpp" />
+    <ClCompile Include="FishEyeCamera.cpp" />
+    <ClCompile Include="GeometricObject.cpp" />
+    <ClCompile Include="GlossySpecularBRDF.cpp" />
+    <ClCompile Include="Hammersleycpp.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="JitteredSampler.cpp" />
+    <ClCompile Include="LambertianBRDF.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MathUtils.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Matte.cpp" />
+    <ClCompile Include="MultiJitteredSampler.cpp" />
+    <ClCompile Include="Normal.cpp" />
+    <ClCompile Include="NRooksSampler.cpp" />
+    <ClCompile Include="OpenCylinder.cpp" />
+    <ClCompile Include="Phong.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Plastic.cpp" />
+    <ClCompile Include="Point2D.cpp" />
+    <ClCompile Include="Point3D.cpp" />
+    <ClCompile Include="PinholeCamera.cpp" />
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="RandomSampler.cpp" />
+    <ClCompile Include="Ray.cpp" />
+    <ClCompile Include="RayCast.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RegularSampler.cpp" />
+    <ClCompile Include="RGB.cpp" />
+    <ClCompile Include="Sampler.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="ShadeRec.cpp" />
+    <ClCompile Include="SimpleTracers.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="SphericalCamera.cpp" />
+    <ClCompile Include="StereoCamera.cpp" />
+    <ClCompile Include="ThinLensCamera.cpp" />
+    <ClCompile Include="Torus.cpp" />
+    <ClCompile Include="Tracer.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Vector3D.cpp" />
+    <ClCompile Include="ViewPlane.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

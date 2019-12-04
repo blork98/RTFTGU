@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GeometricObjects">
+      <UniqueIdentifier>{959811e2-bd6b-4e42-bb57-b7056166b26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{b5ce78c0-cf41-44f2-bc4e-26c6bbc3a9a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{9e323504-eeb4-410a-8e05-d227d5fdda0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{fe453cb9-33c9-4061-a73e-e9dcc265e0cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{4d0ebc61-dc05-4b41-a275-0eb9ce8ed0e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geometric Objects">
+      <UniqueIdentifier>{d4d75124-7903-4370-af77-471a531a6b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tracer">
+      <UniqueIdentifier>{a6b1b7dc-21ea-46b7-afbf-1cfcab90dc96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tracer">
+      <UniqueIdentifier>{b6445ded-4291-439e-afb1-d56248e3f2cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Samplers">
+      <UniqueIdentifier>{c60e641d-3d4f-4821-8a93-e0c243c7be09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Samplers">
+      <UniqueIdentifier>{1f97d2cf-b1cc-48d7-b37c-c84609c21526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Cameras">
+      <UniqueIdentifier>{b90a673c-8c45-4e17-a5f1-f4a7436ac5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cameras">
+      <UniqueIdentifier>{acc928e8-0a2d-4319-a4e6-400e2e1fa7f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BRDF">
+      <UniqueIdentifier>{20bb3977-bf7a-47cf-95fb-e3460e392176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BRDF">
+      <UniqueIdentifier>{a620672e-d1aa-4b11-9a40-03698e914337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lights">
+      <UniqueIdentifier>{a61dfde8-932e-4cff-94e9-13d60af18212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lights">
+      <UniqueIdentifier>{783729cb-f1e4-4224-a308-24bd27e885dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Materials">
+      <UniqueIdentifier>{bf63f3f1-9765-467f-92f2-e74dbb7a53f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Materials">
+      <UniqueIdentifier>{841f0269-424e-49bf-b13b-4c87c30b0946}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ray.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Point3D.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3D.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Normal.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricObject.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="RGB.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadeRec.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewPlane.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer.h">
+      <Filter>Header Files\Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTracers.h">
+      <Filter>Header Files\Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtils.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler.h">
+      <Filter>Header Files\Samplers</Filter>
+    </ClInclude>
+    <ClInclude Include="Point2D.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="RegularSampler.h">
+      <Filter>Header Files\Samplers</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomSampler.h">
+      <Filter>Header Files\Samplers</Filter>
+    </ClInclude>
+    <ClInclude Include="JitteredSampler.h">
+      <Filter>Header Files\Samplers</Filter>
+    </ClInclude>
+    <ClInclude Include="NRooksSampler.h">
+      <Filter>Header Files\Samplers</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiJitteredSampler.h">
+      <Filter>Header Files\Samplers</Filter>
+    </ClInclude>
+    <ClInclude Include="HammerslySampler.h">
+      <Filter>Header Files\Samplers</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="PinholeCamera.h">
+      <Filter>Header Files\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ThinLensCamera.h">
+      <Filter>Header Files\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="FisheyeCamera.h">
+      <Filter>Header Files\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="SphericalCamera.h">
+      <Filter>Header Files\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="StereoCamera.h">
+      <Filter>Header Files\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDF.h">
+      <Filter>Header Files\BRDF</Filter>
+    </ClInclude>
+    <ClInclude Include="LambertianBRDF.h">
+      <Filter>Header Files\BRDF</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="AmbientLight.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="RayCast.h">
+      <Filter>Header Files\Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Matte.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="GlossySpecularBRDF.h">
+      <Filter>Header Files\BRDF</Filter>
+    </ClInclude>
+    <ClInclude Include="Phong.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Plastic.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCylinder.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Torus.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="AmbientOccluder.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaLightingTracer.h">
+      <Filter>Header Files\Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="Emissive.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="AreaLight.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Header Files\GeometricObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvironmentLight.h">
+      <Filter>Header Files\Lights</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Vector3D.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Point3D.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Normal.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="RGB.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadeRec.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricObject.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewPlane.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracer.cpp">
+      <Filter>Source Files\Tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTracers.cpp">
+      <Filter>Source Files\Tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtils.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler.cpp">
+      <Filter>Source Files\Samplers</Filter>
+    </ClCompile>
+    <ClCompile Include="Point2D.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="RegularSampler.cpp">
+      <Filter>Source Files\Samplers</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomSampler.cpp">
+      <Filter>Source Files\Samplers</Filter>
+    </ClCompile>
+    <ClCompile Include="JitteredSampler.cpp">
+      <Filter>Source Files\Samplers</Filter>
+    </ClCompile>
+    <ClCompile Include="NRooksSampler.cpp">
+      <Filter>Source Files\Samplers</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiJitteredSampler.cpp">
+      <Filter>Source Files\Samplers</Filter>
+    </ClCompile>
+    <ClCompile Include="Hammersleycpp.cpp">
+      <Filter>Source Files\Samplers</Filter>
+    </ClCompile>
+    <ClCompile Include="Cameras.cpp">
+      <Filter>Source Files\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="PinholeCamera.cpp">
+      <Filter>Source Files\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ThinLensCamera.cpp">
+      <Filter>Source Files\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="FishEyeCamera.cpp">
+      <Filter>Source Files\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="SphericalCamera.cpp">
+      <Filter>Source Files\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="StereoCamera.cpp">
+      <Filter>Source Files\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDF.cpp">
+      <Filter>Source Files\BRDF</Filter>
+    </ClCompile>
+    <ClCompile Include="LambertianBRDF.cpp">
+      <Filter>Source Files\BRDF</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="AmbientLight.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="RayCast.cpp">
+      <Filter>Source Files\Tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Matte.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="GlossySpecularBRDF.cpp">
+      <Filter>Source Files\BRDF</Filter>
+    </ClCompile>
+    <ClCompile Include="Phong.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Plastic.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCylinder.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Torus.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="AmbientOccluder.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaLightingTracercpp.cpp">
+      <Filter>Source Files\Tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="Emissivecpp.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="AreaLight.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Source Files\Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvironmentLight.cpp">
+      <Filter>Source Files\Lights</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
